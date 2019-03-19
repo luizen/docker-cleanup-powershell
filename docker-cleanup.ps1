@@ -28,34 +28,4 @@ Catch
 	Exit 1
 }
 
-# Try
-# {
-	# Write-Output "2) Killing all running containers..."
-	# docker kill $(docker ps -q)
-# }
-# Catch
-# {
-    # Write-Output "Nothing to kill"
-# }
-
-# Try
-# {
-	# Write-Output "--> Deleting all stopped containers..."
-	# docker rm $(docker ps -a -q) 2>&1 | out-null 
-# }
-# Catch
-# {
-    # Write-Output "Nothing to delete"
-# }
-
-# Try
-# {
-	# Write-Output "--> Deleting all images..."
-	# docker rmi $(docker images -q) 2>&1 | out-null
-# }
-# Catch
-# {
-    # Write-Output "Nothing to delete"
-# }
-
 Write-Output "-------------------"
